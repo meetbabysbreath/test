@@ -1,0 +1,23 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<title>测试页面</title>
+</head>
+<body>
+	<div id="container">
+	</div>
+	<script type="text/javascript" src="../build/react.js"></script>
+	<script type="text/javascript" src="../build/react-dom.js"></script>
+	<script type="text/jsx">
+		var Hello = React.createClass({
+				render: function() {
+					return <div>Hello {this.props.name}</div>;
+				}
+			});
+			ReactDOM.render(
+			  <Hello name="Wor34ld" />,
+			  document.getElementById('container')
+			);
+	</script>
+</body>
+</html>
